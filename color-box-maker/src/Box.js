@@ -9,7 +9,7 @@ const Box = ({color, width, height}) => {
     <>
     {isVisible && 
       <div style={{backgroundColor: color, width: width, height: height}}>
-        <p>Box</p>
+        <p>{color}</p>
       </div>  
     }
     {isVisible &&
