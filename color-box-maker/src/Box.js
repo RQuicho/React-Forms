@@ -1,4 +1,5 @@
 import {React, useState} from 'react';
+import './Box.css';
 
 const Box = ({color, width, height}) => {
   const [isVisible, setIsVisible] = useState(true);
@@ -8,12 +9,12 @@ const Box = ({color, width, height}) => {
   return (
     <>
     {isVisible && 
-      <div style={{backgroundColor: color, width: width, height: height}}>
+      <div className='Box' style={{backgroundColor: color, width: width, height: height}}>
         <p>{color}</p>
       </div>  
     }
     {isVisible &&
-      <button onClick={remove}>X</button>
+      <button className='Box-btn' onClick={remove}>X</button>
     }
     </>
   )
